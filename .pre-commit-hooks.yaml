@@ -1,0 +1,13 @@
+- id: discord-token
+  name: Discord bot tokens
+  description: "Catch bot tokens before they're committed."
+  entry: '(?i)([a-z0-9_-]{23,28})\.([a-z0-9_-]{6,7})\.([a-z0-9_-]{27})'
+  language: pygrep
+  types: [text]
+
+- id: discord-webhook
+  name: Discord webhooks
+  description: "Catch webhooks before they're committed."
+  entry: '(?i)((?:https?:\/\/)?(?:ptb\.|canary\.)?discord(?:app)?\.com\/api\/webhooks\/\d+\/)\S+\/?'
+  language: pygrep
+  types: [text]
