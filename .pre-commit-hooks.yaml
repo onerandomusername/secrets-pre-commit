@@ -1,7 +1,7 @@
 - id: discord-token
   name: Discord bot tokens
   description: "Catch bot tokens before they're committed."
-  entry: '(?i)([a-z0-9_-]{23,28})\.([a-z0-9_-]{6,7})\.([a-z0-9_-]{27})'
+  entry: '(?i)([a-z0-9_-]{23,28})\.([a-z0-9_-]{6,7})\.([a-z0-9_-]{27,})'
   language: pygrep
   types: [text]
 
